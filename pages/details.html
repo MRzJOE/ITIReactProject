@@ -4,191 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+      rel="stylesheet"
+      href="../assets/bootstrap-5.3.7-dist/css/bootstrap.min.css"
+    />
   <title>Blog Details - Foodzy</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Open Sans', sans-serif;
-      line-height: 1.6;
-      background-color: #f5f5f5;
-    }
-
-    /* Header Styles */
-    .top-header {
-      background-color: #fff;
-      padding: 10px 20px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .logo img {
-      height: 40px;
-    }
-
-    .search-bar {
-      display: flex;
-      flex-grow: 1;
-      justify-content: center;
-      padding: 10px;
-      gap: 0;
-    }
-
-    .search-bar input,
-    .search-bar select {
-      padding: 8px;
-      border: 1px solid #ccc;
-    }
-
-    .search-bar input {
-      border-radius: 4px 0 0 4px;
-      width: 300px;
-    }
-
-    .search-bar select {
-      border-left: none;
-    }
-
-    .search-bar button {
-      padding: 8px 12px;
-      background-color: #f44336;
-      color: white;
-      border: none;
-      border-radius: 0 4px 4px 0;
-    }
-
-    .header-icons {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .main-nav {
-      margin-top: 15px;
-    }
-
-    .main-nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      font-weight: bold;
-    }
-
-    .main-nav li:hover {
-      background-color: #f44336;
-      transition: background-color 0.9s;
-    }
-
-    .main-nav a {
-      text-decoration: none;
-      color: rgb(54, 32, 32);
-    }
-
-    .page-title {
-      background-color: #f44336;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-    }
-
-    /* Layout */
-    .container {
-      display: flex;
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
-      gap: 20px;
-    }
-
-    .main-content {
-      flex: 3;
-    }
-
-    .blog-image {
-      width: 100%;
-      border-radius: 5px;
-    }
-
-    h2 {
-      color: #333;
-      margin: 15px 0;
-    }
-
-    .meta {
-      color: gray;
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
-
-    .related-posts,
-    .comment-section,
-    .tags {
-      margin-top: 30px;
-    }
-
-    .related-posts-images {
-      display: flex;
-      gap: 10px;
-    }
-
-    .related-posts img {
-      width: 50%;
-      border-radius: 5px;
-    }
-
-    .footer-columns {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .footer-columns div {
-      flex: 1;
-      padding: 10px;
-      min-width: 200px;
-    }
-
-    .pagination {
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    .pagination button {
-      background: #f44336;
-      color: white;
-      padding: 5px 10px;
-      border-radius: 3px;
-      margin: 0 5px;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="../styles/details.css">
 </head>
 
 <body>
 
   <!-- Header -->
   <header class="top-header">
-    <div class="header-container">
+    <div class="header-container header-container d-sm-none">
       <div class="logo">
         <img src="logo.png" alt="Logo" />
         <div>
@@ -263,7 +91,7 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-columns">
+    <div class="footer-columns container-sm" >
       <div>
         <h3>Foodzy</h3>
         <p>Foodzy is the biggest market of grocery products. Get your daily needs from our store.</p>
@@ -279,9 +107,9 @@
       <div>
         <h3>Category</h3>
         <ul>
-          <li>Baby & Kids</li>
-          <li>Dry Food</li>
-          <li>Pizza</li>
+          <li>DAIRY & BAKERY</li>
+          <li>FRUITS AND VEGETABLES</li>
+          <li>SNACKS</li>
         </ul>
       </div>
       <div>
@@ -292,6 +120,7 @@
     </div>
     <p style="text-align: center; padding-top: 20px;">© 2025 Foodzy. All rights reserved.</p>
   </footer>
+  <script src="../assets/bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
