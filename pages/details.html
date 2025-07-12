@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Details - Foodzy</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+    }
+
+    /* Header Styles */
+    .top-header {
+      background-color: #fff;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .search-bar {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      padding: 10px;
+      gap: 0;
+    }
+
+    .search-bar input,
+    .search-bar select {
+      padding: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .search-bar input {
+      border-radius: 4px 0 0 4px;
+      width: 300px;
+    }
+
+    .search-bar select {
+      border-left: none;
+    }
+
+    .search-bar button {
+      padding: 8px 12px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .header-icons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .main-nav {
+      margin-top: 15px;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      font-weight: bold;
+    }
+
+    .main-nav li:hover {
+      background-color: #f44336;
+      transition: background-color 0.9s;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      color: rgb(54, 32, 32);
+    }
+
+    .page-title {
+      background-color: #f44336;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .main-content {
+      flex: 3;
+    }
+
+    .blog-image {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #333;
+      margin: 15px 0;
+    }
+
+    .meta {
+      color: gray;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .related-posts,
+    .comment-section,
+    .tags {
+      margin-top: 30px;
+    }
+
+    .related-posts-images {
+      display: flex;
+      gap: 10px;
+    }
+
+    .related-posts img {
+      width: 50%;
+      border-radius: 5px;
+    }
+
+    .footer-columns {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-columns div {
+      flex: 1;
+      padding: 10px;
+      min-width: 200px;
+    }
+
+    .pagination {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .pagination button {
+      background: #f44336;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 3px;
+      margin: 0 5px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="top-header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+        <div>
+          <h2 style="margin: 0;">Foodzy</h2>
+          <small>A Treasure of Tastes</small>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search For items..." />
+        <select>
+          <option>All Categories</option>
+        </select>
+        <button>🔍</button>
+      </div>
+      <div class="header-icons">
+        <div>👤 Account</div>
+        <div>🛒 Cart</div>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://www.mclaren.com/">Home</a></li>
+        <li><a href="https://www.mclaren.com/">Category</a></li>
+        <li><a href="https://www.mclaren.com/">Products</a></li>
+        <li><a href="https://www.mclaren.com/">Pages</a></li>
+        <li><a href="https://www.mclaren.com/">Blog</a></li>
+        <li><a href="https://www.mclaren.com/">Elements</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <div class="page-title">Blog Details</div>
+
+  <!-- Content -->
+  <div class="container">
+    <div class="main-content">
+      <img src="salad.jpg" class="blog-image" />
+      <div class="meta">By Admin | 07 Comments | Date: 09.07.2024</div>
+      <h2>Health Benefits of a Raw food</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint delectus odio nobis non voluptatem laudantium magni voluptas dicta explicabo commodi! Laudantium, assumenda nihil? Eligendi cupiditate, quas est voluptatum nisi velit nulla numquam repudiandae deleniti perferendis dolorum placeat soluta ad.
+      </p>
+
+      <div class="related-posts">
+        <h3>Related Posts</h3>
+        <div class="related-posts-images">
+          <img src="juice.jpg" />
+          <img src="pasta.jpg" />
+        </div>
+      </div>
+
+      <div class="comment-section">
+        <h3>Comment</h3>
+        <p>
+          <strong>John Martin:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores officiis magni explicabo fuga molestiae architecto ipsa exercitationem voluptatibus totam quas, accusantium!
+        </p>
+      </div>
+
+      <div class="tags">
+        <strong>Tags:</strong> Catalog, Appetizer, Meat Food
+      </div>
+
+      <div class="pagination">
+        <button>1</button>
+        <button>2</button>
+        <button>Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <h3>Foodzy</h3>
+        <p>Foodzy is the biggest market of grocery products. Get your daily needs from our store.</p>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li>About Us</li>
+          <li>Delivery Information</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Category</h3>
+        <ul>
+          <li>Baby & Kids</li>
+          <li>Dry Food</li>
+          <li>Pizza</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <input type="text" placeholder="Your Email" />
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <p style="text-align: center; padding-top: 20px;">© 2025 Foodzy. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
