@@ -1,3 +1,7 @@
+:root {
+  --prim-color: #f53e32;
+}
+
 table tr {
   background-color: #f7f7f8 !important;
 }
@@ -15,4 +19,9 @@ td {
 table {
   border-radius: 5px;
   overflow: hidden;
+}
+.btn-primary {
+  background-color: var(--prim-color);
+  color: white;
+  border: none;
 }
