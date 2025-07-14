@@ -133,14 +133,15 @@
       cursor: pointer;
     }
  .image-gallery img {
+  padding: 5px;
   width: 60px;
   height: 60px;
   object-fit: cover;
-  border-radius: 50%50%;
+  border-radius: 30%;
   transition: transform 0.3s;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .image-gallery img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
