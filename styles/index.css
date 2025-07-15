@@ -1,16 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.6;
-  background-color: #f5f5f5;
-}
-
-/* Header Styles */
 .top-header {
   background-color: #fff;
   padding: 10px 20px;
@@ -95,59 +83,103 @@ body {
   color: rgb(54, 32, 32);
 }
 
-.title-btns {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #f44336;
-  color: white;
-  padding: 10px 20px;
-}
-.register,
-.status {
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
-}
-.formcontent {
-    border:1px solid #E9E9E9;
-      padding: 30px;
-      border-radius: 5px;
-      width: 600px;
-      margin: auto;
-      margin-top: 10%;
-}
-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.forminputs {
-  flex: 1 1 45%;
-  display: flex;
-  flex-direction: column;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-input {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 14px;
-      outline: none;
-    }
-    label{
-      color: #444444;
-    }
-    .img{
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-    }
-    .formbtns{
-      flex: 1 1 45%;
+.container {
   display: flex;
-  flex-direction: column;
-background-color: #f44336;
-    }
+  gap: 20px;
+  border: 2px solid #ccc;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.imgdiv {
+  width: 30%;
+  margin: auto;
+}
+
+#img {
+  width: 100%;
+}
+
+.content {
+  width: 65%;
+}
+
+.superdiv {
+  display: flex;
+  gap: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.superdiv .icon {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.superdiv .icon img {
+  width: 50%;
+}
+
+.superdiv .paragraphs {
+  width: 80%;
+}
+
+.superdiv p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}
+h2{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgdiv, .content {
+    width: 100%;
+  }
+
+  .superdiv {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .superdiv .icon, .superdiv .paragraphs {
+    width: 100%;
+  }
+
+  .superdiv .icon img {
+    width: 50px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .imgdiv, .content {
+    width: 100%;
+  }
+}
