@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Foodzy - A Treasure of Tastes</title>
+
     <link
       rel="stylesheet"
       href="../assets/bootstrap-5.3.7-dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="../styles/index.css" />
+
     <style>
       :root {
         --prim-color: #f53e32;
@@ -21,28 +24,56 @@
         color: white;
         border: none;
       }
+      /* You may need to add more styles from index.css or other files here */
     </style>
   </head>
+
   <body>
-    <section id="cartItems" class="container-sm">
-      <div class="d-flex justify-content-between mb-3">
-        <p class="display-5">Daily Best Sells</p>
-        <div class="align-middle d-flex align-items-center">
-          <span class="d-lg-flex gap-4 link-offset-2">
-            <a href="" class="link-underline link-underline-opacity-0"
-              >Featured</a
-            >
-          </span>
+    <header class="top-header">
+      <div class="header-container">
+        <div class="logo">
+          <img src="../assets/logo.png" alt="Logo" />
+          <div>
+            <h2 style="margin: 0">Foodzy</h2>
+            <small>A Treasure of Tastes</small>
+          </div>
+        </div>
+        <div class="header-icons">
+          <div>👤 Account</div>
+          <div>🛒 Cart</div>
         </div>
       </div>
-      <div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Elements</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="cartItems" class="container-sm my-5">
+        <div class="d-flex justify-content-between mb-3">
+          <p class="display-5">Daily Best Sells</p>
+          <div class="d-flex align-items-center">
+            <span class="d-lg-flex gap-4 link-offset-2">
+              <a href="#" class="link-underline link-underline-opacity-0"
+                >Featured</a
+              >
+            </span>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-3 mb-3">
             <div class="card h-100">
               <img
                 src="../assets/→ product-5-1.jpg.png"
                 class="card-img-top"
-                alt="Product Image"
+                alt="Chicken Meatballs"
               />
               <div class="card-body d-flex flex-column">
                 <h6 class="text-muted">Hodo Foods</h6>
@@ -50,9 +81,7 @@
                   All Natural Italian-Style Chicken Meatballs
                 </h5>
                 <p class="card-text mt-4">$234.25</p>
-                <button
-                  class="card-text mt-auto btn-primary rounded-2 py-2 object-fit-fill"
-                >
+                <button class="card-text mt-auto btn-primary rounded-2 py-2">
                   Add To Cart
                 </button>
               </div>
@@ -63,7 +92,7 @@
               <img
                 src="../assets/→ product-5-1.jpg.png"
                 class="card-img-top"
-                alt="Product Image"
+                alt="Chicken Meatballs"
               />
               <div class="card-body d-flex flex-column">
                 <h6 class="text-muted">Hodo Foods</h6>
@@ -71,9 +100,7 @@
                   All Natural Italian-Style Chicken Meatballs
                 </h5>
                 <p class="card-text mt-4">$234.25</p>
-                <button
-                  class="card-text mt-auto btn-primary rounded-2 py-2 object-fit-fill"
-                >
+                <button class="card-text mt-auto btn-primary rounded-2 py-2">
                   Add To Cart
                 </button>
               </div>
@@ -84,7 +111,7 @@
               <img
                 src="../assets/→ product-5-1.jpg.png"
                 class="card-img-top"
-                alt="Product Image"
+                alt="Chicken Meatballs"
               />
               <div class="card-body d-flex flex-column">
                 <h6 class="text-muted">Hodo Foods</h6>
@@ -92,9 +119,7 @@
                   All Natural Italian-Style Chicken Meatballs
                 </h5>
                 <p class="card-text mt-4">$234.25</p>
-                <button
-                  class="card-text mt-auto btn-primary rounded-2 py-2 object-fit-fill"
-                >
+                <button class="card-text mt-auto btn-primary rounded-2 py-2">
                   Add To Cart
                 </button>
               </div>
@@ -105,7 +130,7 @@
               <img
                 src="../assets/→ product-5-1.jpg.png"
                 class="card-img-top"
-                alt="Product Image"
+                alt="Chicken Meatballs"
               />
               <div class="card-body d-flex flex-column">
                 <h6 class="text-muted">Hodo Foods</h6>
@@ -113,17 +138,61 @@
                   All Natural Italian-Style Chicken Meatballs
                 </h5>
                 <p class="card-text mt-4">$234.25</p>
-                <button
-                  class="card-text mt-auto btn-primary rounded-2 py-2 object-fit-fill"
-                >
+                <button class="card-text mt-auto btn-primary rounded-2 py-2">
                   Add To Cart
                 </button>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <div class="container my-5">
+        <div class="imgdiv">
+          <img src="../assets/left.svg" alt="" id="img" />
+        </div>
+        <div class="content">
+          <h2>Why People Choose Us?</h2>
+          <div class="superdiv">
+            <div class="icon">
+              <img src="../assets/Frame 35.svg" alt="Convenience Icon" />
+            </div>
+            <div class="paragraphs">
+              <h3>Convenient and Reliable</h3>
+              <p>
+                Whether you dine in, take out, or order delivery, our service is
+                convenient, fast, and reliable, making mealtime hassle-free.
+              </p>
+            </div>
+          </div>
+          <div class="superdiv">
+            <div class="icon">
+              <img src="../assets/Frame 35 (1).svg" alt="Variety Icon" />
+            </div>
+            <div class="paragraphs">
+              <h3>Variety of Options</h3>
+              <p>
+                From hearty meals to light snacks, we offer a wide range of
+                options to suit every taste and craving.
+              </p>
+            </div>
+          </div>
+          <div class="superdiv">
+            <div class="icon">
+              <img src="../assets/Frame 35 (2).svg" alt="Burger Icon" />
+            </div>
+            <div class="paragraphs">
+              <h3>Eat Burger</h3>
+              <p>
+                Our burgers are grilled to perfection, with juicy patties and
+                flavorful toppings that make every bite a delicious experience.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </main>
+
     <script src="../assets/bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
   </body>
 </html>
