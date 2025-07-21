@@ -1,138 +1,135 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
-    body {
-      font-family: 'Open Sans', sans-serif;
-    }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+.logo img {
+  height: 40px;
+}
 
-    .logo img {
-      height: 40px;
-    }
+.search-bar {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 10px;
+  gap: 0;
+}
 
-    .search-bar {
-      display: flex;
-      flex-grow: 1;
-      justify-content: center;
-      padding: 10px;
-      gap: 0;
-    }
+.search-bar input,
+.search-bar select {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
 
-    .search-bar input,
-    .search-bar select {
-      padding: 8px;
-      border: 1px solid #ccc;
-    }
+.search-bar input {
+  border-radius: 4px 0 0 4px;
+  width: 300px;
+}
 
-    .search-bar input {
-      border-radius: 4px 0 0 4px;
-      width: 300px;
-    }
+.search-bar select {
+  border-left: none;
+}
 
-    .search-bar select {
-      border-left: none;
-    }
+.search-bar button {
+  padding: 8px 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
 
-    .search-bar button {
-      padding: 8px 12px;
-      background-color: #f44336;
-      color: white;
-      border: none;
-      border-radius: 0 4px 4px 0;
-    }
+.header-icons {
+  position: relative;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-    .header-icons {
-      position: relative;
-      left: 50px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
+.page-title {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
 
-    
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  gap: 20px;
+}
 
-    .page-title {
-      background-color: #f44336;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-    }
+.main-content {
+  flex: 3;
+}
 
-    /* Layout */
-    .container {
-      display: flex;
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
-      gap: 20px;
-    }
+.blog-image {
+  width: 100%;
+  border-radius: 5px;
+}
 
-    .main-content {
-      flex: 3;
-    }
+h2 {
+  color: #333;
+  margin: 15px 0;
+}
 
-    .blog-image {
-      width: 100%;
-      border-radius: 5px;
-    }
+.meta {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
 
-    h2 {
-      color: #333;
-      margin: 15px 0;
-    }
+.related-posts,
+.comment-section,
+.tags {
+  margin-top: 30px;
+}
 
-    .meta {
-      color: gray;
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
+.related-posts-images {
+  display: flex;
+  gap: 10px;
+}
 
-    .related-posts,
-    .comment-section,
-    .tags {
-      margin-top: 30px;
-    }
+.related-posts img {
+  width: 50%;
+  border-radius: 5px;
+}
 
-    .related-posts-images {
-      display: flex;
-      gap: 10px;
-    }
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-    .related-posts img {
-      width: 50%;
-      border-radius: 5px;
-    }
+.footer-columns div {
+  flex: 1;
+  padding: 10px;
+  min-width: 200px;
+}
 
-    .footer-columns {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
+.pagination {
+  margin-top: 30px;
+  text-align: center;
+}
 
-    .footer-columns div {
-      flex: 1;
-      padding: 10px;
-      min-width: 200px;
-    }
+.pagination button {
+  background: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+}
 
-    .pagination {
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    .pagination button {
-      background: #f44336;
-      color: white;
-      padding: 5px 10px;
-      border-radius: 3px;
-      margin: 0 5px;
-      border: none;
-      cursor: pointer;
-    }
- .image-gallery img {
+.image-gallery img {
   padding: 5px;
   width: 60px;
   height: 60px;
@@ -145,3 +142,18 @@
 .image-gallery img:hover {
   transform: scale(1.1);
 }
+
+#searchIcon {
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+
+.mobile-search-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 12px;
+  border: none 
+  
+}
+
