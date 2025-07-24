@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color:#ffffff ;
+  text-align: center;
+}
+
+.team-section {
+  padding: 50px 20px;
+}
+
+.section-header {
+  margin-bottom: 40px;
+}
+
+.diamond-image {
+  width: 70px;
+  margin-bottom: 10px;
+  top: 10px;
+}
+
+.top-member {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 10px;
+}
+
+.bottom-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.member {
+  width: 180px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.member:hover {
+  transform: scale(1.1);
+}
+
+.image-placeholder {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 15px;
+  background: #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.member h3 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.position {
+  font-size: 13px;
+  color: #999;
+  margin: 5px 0;
+}
+
+.member-details {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  font-size: 12px;
+  color: #333;
+  padding: 5px;
+}
+
+.member:hover .member-details {
+  opacity: 1;
+  max-height: 100px;
+}
+
+.pagination button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+}
+.orange-bar {
+  background-color: #f44336;
+  color: white;
+  padding: 5px;
+
+
+}
